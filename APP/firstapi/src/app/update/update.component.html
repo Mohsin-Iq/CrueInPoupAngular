@@ -1,0 +1,25 @@
+
+  <h2 style="text-align: center;">Update Employee </h2>
+  <div class="submit-form">
+    <div class="row">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control add" id="name" required [(ngModel)]="employee.name" name="name"  autocomplete="name"/>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input class="form-control add" id="email" required [(ngModel)]="employee.email" name="email" autocomplete="email" />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input class="form-control add" id="phone" required [(ngModel)]="employee.phone" name="phone"  autocomplete="photo"/>
+      </div>
+      <div style="padding-top:10px ;"  class="form-group add">
+        <button  class="btn btn-outline-success view " (click)="Updateit(employee)">update</button>
+        <button  class="btn btn-outline-primary view " [mat-dialog-close]="false" > back </button>
+      </div>
+    </div>
+
+  </div>

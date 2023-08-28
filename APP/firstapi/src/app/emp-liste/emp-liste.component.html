@@ -1,0 +1,50 @@
+<!-- <div class="container add">
+    <legend>Create Item</legend>
+    <form>
+      <div class="mb-3">
+        <label for="Name" class="form-label">Name</label>
+        <input type="text" name="name" class="form-control" id="Name" autocomplete="given-name" />
+      </div>
+      <div class="mb-3">
+        <label for="Email" class="form-label">Email</label>
+        <input type="email" name="Email" class="form-control" id="Email" autocomplete="email" />
+      </div>
+      <div class="mb-3">
+        <label for="Phone" class="form-label">Phone</label>
+        <input type="text" name="Phone"  class="form-control" id="Phone"  autocomplete="on"/>
+      </div>
+      <button type="button" (click)="create()" class="btn btn-primary">Create</button>
+    </form>
+  </div> -->
+
+   
+
+<div >
+
+  <h2 style="text-align: center;">Create A New Employee </h2>
+  <div class="submit-form">
+    <div class="row">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control add" id="name" required [(ngModel)]="employee.name" name="name"  autocomplete="name"/>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input class="form-control add" id="email" required [(ngModel)]="employee.email" name="email" autocomplete="email" />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input class="form-control add" id="phone" required [(ngModel)]="employee.phone" name="phone"  autocomplete="photo"/>
+      </div>
+      <div style="padding-top:10px ;"  class="form-group add">
+      <button (click)="saveTutorial()" class="btn btn-outline-success view" > create </button>
+      <button [mat-dialog-close]="false" class="btn btn-outline-primary view" > back </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+

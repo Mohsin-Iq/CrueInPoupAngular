@@ -1,0 +1,26 @@
+
+  <h2 style="text-align: center;">Details of Employee's </h2>
+  <div class="submit-form">
+    <div class="row">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control add" id="name" required [(ngModel)]="employee.name" name="name"  autocomplete="name" disabled="disabled"/>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input class="form-control add" id="email" required [(ngModel)]="employee.email" name="email" autocomplete="email"  disabled="disabled" />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input class="form-control add" id="phone" required [(ngModel)]="employee.phone" name="phone"  autocomplete="photo"  disabled="disabled"  />
+      </div>
+      <div style="padding-top:10px ;"  class="form-group add">
+        <button  class="btn btn-outline-danger view " (click)="deleteAll(employee.employeeID)" > Delete </button>
+          <button  class="btn btn-outline-primary view " [mat-dialog-close]="false" > back </button>
+          <button  class="btn btn-outline-success view " (click)="edit(employee)" > Edit </button>
+      </div>
+    </div>
+
+  </div>
